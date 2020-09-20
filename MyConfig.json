@@ -1,3 +1,6 @@
+{
+"AWSTemplateFormatVersion": "2020-09-20",
+"Resources" : {
 
 "MyConfig" : {
    "Type" : "AWS::AutoScaling::LaunchConfiguration",
@@ -6,4 +9,5 @@
       "SecurityGroups" : [ { "Ref" : "logicalName" }, "MyAutoScalingSecurityGroup1" ],
       "InstanceType" : "t2.micro"
    }
+ }
 }
