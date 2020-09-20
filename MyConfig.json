@@ -5,8 +5,8 @@
   "InstanceType" : {
     "Type" : "String"
   }
-   }
-"Resources": {
+   }, 
+"Resources" : {
 "MyConfig" : {
    "Type" : "AWS::AutoScaling::LaunchConfiguration",
    "Properties" : {
