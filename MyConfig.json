@@ -1,14 +1,16 @@
 {
-"AWSTemplateFormatVersion" : "2010-09-09",
-"Description": "Launch Configuration for AutoScaling",
-"Resources" : {
-"MyConfig" : {
-   "Type" : "AWS::AutoScaling::LaunchConfiguration",
-   "Properties" : {
-      "ImageId" : "ami-08a2aed6e0a6f9c7d",
-      "SecurityGroups" : [ "MyAutoScalingSecurityGroup1" ],
-      "InstanceType" : "t2.micro"
-   }
-  }
- }
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Resources": {
+        "S3Bucket": {
+            "Type": "AWS::S3::Bucket"
+        }
+    },
+    "Outputs": {
+        "BucketName": {
+            "Value": {
+                "Ref": "S3Bucket"
+            },
+            "Description": "Name of the sample Amazon S3 bucket."
+        }
+    }
 }
