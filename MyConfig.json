@@ -6,6 +6,7 @@
    "Type" : "AWS::AutoScaling::LaunchConfiguration",
    "Properties" : {
       "ImageId" : "ami-08a2aed6e0a6f9c7d",
+      "SecurityGroupIds" : [ "sg-09013271b523706a6" ],
       "InstanceType" : "t2.micro"
    }
  }
