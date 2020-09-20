@@ -1,6 +1,11 @@
 {
 "AWSTemplateFormatVersion" : "2010-09-09",
 "Description": "Launch Configuration for AutoScaling",
+   "Parameters" : {
+  "InstanceType" : {
+    "Type" : "String"
+  }
+   }
 "Resources" : {
 "MyConfig" : {
    "Type" : "AWS::AutoScaling::LaunchConfiguration",
