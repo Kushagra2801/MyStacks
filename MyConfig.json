@@ -10,10 +10,11 @@
       "InstanceType" : "t2.micro"
          }
  }
-"MySecurityGroup" : {
+{
   "Type" : "AWS::EC2::SecurityGroup",
   "Properties" : {
       "GroupDescription" : "Test",
+   "GroupName" : "MySecurityGroup",
       "SecurityGroupEgress" : [ {"IpProtocol": "tcp",
                         "FromPort": "0",
                         "ToPort": "0",
