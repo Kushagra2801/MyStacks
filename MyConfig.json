@@ -1,12 +1,13 @@
 {
 "AWSTemplateFormatVersion": "2020-09-20",
+"Description": "Launch Configuration for AutoScaling",
 "Resources" : {
 
 "MyConfig" : {
    "Type" : "AWS::AutoScaling::LaunchConfiguration",
    "Properties" : {
       "ImageId" : "ami-08a2aed6e0a6f9c7d",
-      "SecurityGroupIds" : [ "sg-09013271b523706a6" ],
+      "SecurityGroups" : [ "MyAutoScalingSecurityGroup1" ],
       "InstanceType" : "t2.micro"
    }
  }
