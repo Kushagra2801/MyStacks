@@ -7,9 +7,8 @@
    "Properties" : {
       "ImageId" : "ami-08a2aed6e0a6f9c7d",
       "SecurityGroups" : [ "MyAutoScalingSecurityGroup1" ],
-      "InstanceType" : "t2.micro",
-      "VpcId" : "vpc-0313b28c4e92506a2"
-   }
+      "InstanceType" : "t2.micro"
+         }
  }
 }
 }
