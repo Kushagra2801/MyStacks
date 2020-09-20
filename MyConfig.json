@@ -8,5 +8,6 @@
       "SecurityGroups" : [ "MyAutoScalingSecurityGroup1" ],
       "InstanceType" : "t2.micro"
    }
+  }
  }
 }
