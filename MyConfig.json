@@ -2,12 +2,15 @@
 "AWSTemplateFormatVersion" : "2010-09-09",
 "Description": "Launch Configuration for AutoScaling",
 "Resources" : {
-"MyConfig" : {
-   "Type" : "AWS::AutoScaling::LaunchConfiguration",
+"MyAutoScalingGroup" : {
+   "Type" : "AWS::AutoScaling::AutoScalingGroup",
    "Properties" : {
-      "ImageId" : "ami-08a2aed6e0a6f9c7d",
-      "InstanceType" : "t2.micro"
+      "VPCZoneIdentifier" : [ "subnet-09be79e45eb7519dc", "subnet-002da2c622a31cb8e" ],
+      "LaunchConfigurationName" : [ "MyLaunchConfiguration" ],
+      "MinSize" : "0",
+      "MaxSize" : "1",
+      "DesiredCapacity" : "1"
    }
-  }
- }
+}
+}
 }
