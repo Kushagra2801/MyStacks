@@ -9,6 +9,7 @@
       "SecurityGroups" : [ { "Ref" : "MySecurityGroup" } ],
       "InstanceType" : "t2.micro"
          }
+},
    "MySecurityGroup" : {
   "Type" : "AWS::EC2::SecurityGroup",
   "Properties" : {
@@ -19,7 +20,7 @@
                         "CidrIp": "0.0.0.0/0"} ],
             "VpcId" : "vpc-0313b28c4e92506a2"
     }
-}
+},
 }
 }
 
